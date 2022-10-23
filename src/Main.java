@@ -19,6 +19,7 @@ public class Main {
         for (BaseLogger logger:loggers) {
             logger.log("log mesajı");
         }
-
+        CustomerManager cm = new CustomerManager(new DataBaseLogger());
+        cm.add();
     }
 }
